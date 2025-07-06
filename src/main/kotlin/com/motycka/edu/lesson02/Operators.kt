@@ -1,19 +1,19 @@
 package com.motycka.edu.lesson02
 
+import kotlin.math.round
 
 fun evaluate(a: Double, b: Double) {
+    // Round to 2 decimal places
+    val sum        = round((a + b) * 100) / 100
+    val difference = round((a - b) * 100) / 100
+    val product    = round((a * b) * 100) / 100
 
-    val sum = TODO()
-    val difference = TODO()
-    val product = TODO()
-
-    val isEqual = TODO()
-    val isNotEqual = TODO()
-    val aIsGreater = TODO()
-    val aIsLessOrEqual = TODO()
-
-    val bothIsAboveZero = TODO()
-    val eitherIsAboveOrEqualZero = TODO()
+    val isEqual                  = a == b
+    val isNotEqual               = a != b
+    val aIsGreater               = a > b
+    val aIsLessOrEqual           = a <= b
+    val bothIsAboveZero          = a > 0 && b > 0
+    val eitherIsAboveOrEqualZero = a >= 0 || b >= 0
 
     println("Sum: $sum")
     println("Difference: $difference")
